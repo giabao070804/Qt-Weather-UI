@@ -9,7 +9,7 @@ MainWindow::MainWindow(QWidget *parent)
 //tạo icon
     this->setWindowIcon(QIcon(":/icon.png"));
 //link nút tìm và thanh search
-    connect(ui->btnSearch, &QPushButton::clicked, this, [=]() {
+    connect(ui->btnSearch, &QPushButton::clicked, this,  [=]() {
         QString city = ui->lineEditCity->text();
 //lệnh if else để set các thành phố + nhiệt độ + thời tiết
         if (city == "Hanoi" || city == "hanoi" || city == "haNoi" || city == "ha noi" || city == "Ha Noi") {
@@ -43,7 +43,8 @@ MainWindow::MainWindow(QWidget *parent)
             ui->labelWeather->setText("--");
         }
    });
-
+//connect nút lineEdit với nút enter/return
+connect(ui->lineEditCity, &QLineEdit::returnPressed, this, [=](){ ui->btnSearch->click(); });
     ui->labelIcon->setScaledContents(true);
 //load ảnh trong qrc
     QPixmap pix(":/weather2.png");
