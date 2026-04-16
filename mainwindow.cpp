@@ -16,7 +16,7 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->settingButton2, &QToolButton::clicked, this, [=]() {
         ui->stackedWidget->setCurrentIndex(0);
     });
-//tạo icon ( chưa test vì trên macos hiển thị được icon)
+//tạo icon ( chưa test vì trên macos không hiển thị được icon)
     this->setWindowIcon(QIcon(":/icon.png"));
 //link nút tìm và thanh search
     connect(ui->btnSearch, &QPushButton::clicked, this,  [=]() {
