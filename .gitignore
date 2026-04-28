@@ -1,10 +1,4 @@
-# Thư mục build của Qt
-build/
-build-*/
-
-# Các file cấu hình user của Qt Creator
+build*/
 *.user
-*.user.*
-
-# File rác của macOS
-.DS_Stor
+.DS_Store
+.qmake.stash
