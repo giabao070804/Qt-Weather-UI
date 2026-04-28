@@ -45,7 +45,7 @@ MainWindow::MainWindow(QWidget *parent)
             if (ui->fButton->isChecked()) {
                 ui->labelTemp->setText("❄️ 64,4°F");
             } else {
-                ui->labelTemp->setText("❄️ 18°");
+                ui->labelTemp->setText("❄️ 18°C");
             }
             ui->labelWeather->setText("☁️ Mây Mù");
         }
@@ -75,11 +75,9 @@ MainWindow::MainWindow(QWidget *parent)
    });
 //đặt style tối
     QString darkStyle =
+        "QWidget { color: white; }"
         "QMainWindow { background-color: #1e1e2f; }"
-        "QLabel { color: white; }"
         "QGroupBox { color: white; font-weight: bold; }"
-        "QRadioButton { color: white; }"
-        "QToolButton { color: white; }"
         "QLineEdit { "
         "border-radius: 15px; "
         "padding: 5px 15px; "
