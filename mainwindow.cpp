@@ -75,7 +75,7 @@ MainWindow::MainWindow(QWidget *parent)
    });
 //đặt style tối
     QString darkStyle =
-        "QWidget { color: white; }"
+        "* { color: white; }"
         "QMainWindow { background-color: #1e1e2f; }"
         "QGroupBox { color: white; font-weight: bold; }"
         "QLineEdit { "
@@ -85,6 +85,7 @@ MainWindow::MainWindow(QWidget *parent)
         "color: white; "
         "border: 1px solid #555; "
         "}";
+
 
 //đặt style sáng
     QString lightStyle =
@@ -112,7 +113,7 @@ MainWindow::MainWindow(QWidget *parent)
     });
 //đặt default là darkmode khi run app
     ui->darkButton->setChecked(true);
-    this->setStyleSheet(darkStyle);
+    qApp->setStyleSheet(darkStyle);
 
 //Tự động search lại thành phố sau khi đổi độ
     connect(ui->fButton, &QRadioButton::clicked, this, [=]() {
