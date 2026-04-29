@@ -72,6 +72,7 @@
                <font>
                 <family>Monaco</family>
                 <pointsize>20</pointsize>
+                <weight>50</weight>
                 <italic>false</italic>
                 <bold>false</bold>
                 <underline>false</underline>
@@ -80,7 +81,7 @@
                </font>
               </property>
               <property name="layoutDirection">
-               <enum>Qt::LayoutDirection::LeftToRight</enum>
+               <enum>Qt::LeftToRight</enum>
               </property>
               <property name="autoFillBackground">
                <bool>false</bool>
@@ -89,16 +90,13 @@
                <string notr="true"/>
               </property>
               <property name="text">
-               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Hà Nội, Việt Nam&lt;/p&gt;&lt;p&gt;10:35 - 9/4/2026&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;Hà Nội, Việt Nam&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;10:35 - 9/4/2026&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
               </property>
               <property name="textFormat">
-               <enum>Qt::TextFormat::AutoText</enum>
+               <enum>Qt::AutoText</enum>
               </property>
               <property name="scaledContents">
                <bool>false</bool>
-              </property>
-              <property name="alignment">
-               <set>Qt::AlignmentFlag::AlignCenter</set>
               </property>
              </widget>
             </item>
@@ -118,6 +116,22 @@
              </widget>
             </item>
            </layout>
+          </item>
+          <item>
+           <spacer name="verticalSpacer">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Minimum</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
           </item>
           <item>
            <layout class="QHBoxLayout" name="horizontalLayout">
@@ -149,6 +163,7 @@
                <font>
                 <family>Monaco</family>
                 <pointsize>20</pointsize>
+                <weight>75</weight>
                 <bold>true</bold>
                </font>
               </property>
@@ -191,6 +206,7 @@ QPushButton:hover { background-color: #005a9e; }</string>
              <font>
               <family>Monaco</family>
               <pointsize>20</pointsize>
+              <weight>75</weight>
               <bold>true</bold>
              </font>
             </property>
@@ -231,7 +247,7 @@ QPushButton:hover { background-color: #005a9e; }</string>
              </font>
             </property>
             <property name="layoutDirection">
-             <enum>Qt::LayoutDirection::RightToLeft</enum>
+             <enum>Qt::LeftToRight</enum>
             </property>
             <property name="text">
              <string>↩</string>
@@ -249,15 +265,12 @@ QPushButton:hover { background-color: #005a9e; }</string>
             <property name="text">
              <string>Cài đặt</string>
             </property>
-            <property name="alignment">
-             <set>Qt::AlignmentFlag::AlignCenter</set>
-            </property>
            </widget>
           </item>
           <item>
            <spacer name="verticalSpacer_2">
-            <property name="orientation">
-             <enum>Qt::Orientation::Vertical</enum>
+            <property name="sizeType">
+             <enum>QSizePolicy::Minimum</enum>
             </property>
             <property name="sizeHint" stdset="0">
              <size>
@@ -317,8 +330,8 @@ QPushButton:hover { background-color: #005a9e; }</string>
           </item>
           <item>
            <spacer name="verticalSpacer_4">
-            <property name="orientation">
-             <enum>Qt::Orientation::Vertical</enum>
+            <property name="sizeType">
+             <enum>QSizePolicy::Minimum</enum>
             </property>
             <property name="sizeHint" stdset="0">
              <size>
@@ -330,8 +343,8 @@ QPushButton:hover { background-color: #005a9e; }</string>
           </item>
           <item>
            <spacer name="verticalSpacer_3">
-            <property name="orientation">
-             <enum>Qt::Orientation::Vertical</enum>
+            <property name="sizeType">
+             <enum>QSizePolicy::Minimum</enum>
             </property>
             <property name="sizeHint" stdset="0">
              <size>
@@ -358,7 +371,8 @@ QPushButton:hover { background-color: #005a9e; }</string>
            <widget class="QRadioButton" name="cButton">
             <property name="font">
              <font>
-              <family>Monaco</family>
+              <family>MS Shell Dlg 2</family>
+              <pointsize>13</pointsize>
              </font>
             </property>
             <property name="text">
@@ -376,7 +390,8 @@ QPushButton:hover { background-color: #005a9e; }</string>
            <widget class="QRadioButton" name="fButton">
             <property name="font">
              <font>
-              <family>Monaco</family>
+              <family>MS Shell Dlg 2</family>
+              <pointsize>13</pointsize>
              </font>
             </property>
             <property name="text">
@@ -389,8 +404,8 @@ QPushButton:hover { background-color: #005a9e; }</string>
           </item>
           <item>
            <spacer name="verticalSpacer_6">
-            <property name="orientation">
-             <enum>Qt::Orientation::Vertical</enum>
+            <property name="sizeType">
+             <enum>QSizePolicy::Minimum</enum>
             </property>
             <property name="sizeHint" stdset="0">
              <size>
@@ -402,8 +417,8 @@ QPushButton:hover { background-color: #005a9e; }</string>
           </item>
           <item>
            <spacer name="verticalSpacer_5">
-            <property name="orientation">
-             <enum>Qt::Orientation::Vertical</enum>
+            <property name="sizeType">
+             <enum>QSizePolicy::Minimum</enum>
             </property>
             <property name="sizeHint" stdset="0">
              <size>
