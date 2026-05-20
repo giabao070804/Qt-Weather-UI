@@ -1,6 +1,6 @@
 <RCC>
     <qresource prefix="/">
         <file>weather2.png</file>
-        <file>icon.png</file>
+        <file>data.json</file>
     </qresource>
 </RCC>

@@ -1,0 +1,9 @@
+{
+  "wards": {
+    "Hà Nội": ["Hoàn Kiếm", "Thanh Xuân", "Cầu Giấy"],
+    "London": ["City of London", "Greenwich", "Enfield"],
+    "Tokyo": ["Chiyoda", "Minato", "Sumida"],
+    "New York": ["The Bronx", "Brooklyn", "Manhattan"],
+    "Sydney": ["Blacktown", "Hills District", "Penrith"]
+  }
+}
