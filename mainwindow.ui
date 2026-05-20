@@ -134,6 +134,11 @@
           </item>
           <item>
            <widget class="QRadioButton" name="cButton">
+            <property name="font">
+             <font>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
             <property name="text">
              <string>Độ C (℃)</string>
             </property>
@@ -147,6 +152,7 @@
             <property name="font">
              <font>
               <family>Arial</family>
+              <pointsize>15</pointsize>
              </font>
             </property>
             <property name="text">
@@ -309,7 +315,7 @@ QPushButton:hover { background-color: #005a9e; }</string>
             <property name="font">
              <font>
               <family>Arial</family>
-              <pointsize>20</pointsize>
+              <pointsize>25</pointsize>
              </font>
             </property>
             <property name="text">
@@ -338,7 +344,7 @@ QPushButton:hover { background-color: #005a9e; }</string>
             <property name="font">
              <font>
               <family>Arial</family>
-              <pointsize>15</pointsize>
+              <pointsize>20</pointsize>
              </font>
             </property>
             <property name="text">
@@ -351,7 +357,7 @@ QPushButton:hover { background-color: #005a9e; }</string>
             <property name="font">
              <font>
               <family>Arial</family>
-              <pointsize>13</pointsize>
+              <pointsize>20</pointsize>
              </font>
             </property>
             <property name="text">
@@ -370,7 +376,7 @@ QPushButton:hover { background-color: #005a9e; }</string>
             <property name="font">
              <font>
               <family>Arial</family>
-              <pointsize>13</pointsize>
+              <pointsize>20</pointsize>
              </font>
             </property>
             <property name="text">
@@ -461,6 +467,5 @@ QPushButton:hover { background-color: #005a9e; }</string>
  <connections/>
  <buttongroups>
   <buttongroup name="buttonGroup"/>
-  <buttongroup name="buttonGroup_2"/>
  </buttongroups>
 </ui>

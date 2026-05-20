@@ -2,6 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QtCore/qjsonobject.h>
+#include <QJsonObject>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -19,5 +21,14 @@ public:
 
 private:
     Ui::MainWindow *ui;
+
+    QJsonObject m_wardsData;
+    QString m_darkStyle;
+    QString m_lightStyle;
+
+    void setupBasicUI();
+    void initStyles();
+    void loadJsonData();
+    void setupConnections();
 };
 #endif // MAINWINDOW_H
