@@ -19,6 +19,9 @@ public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow() override;
 
+private slots:
+    void on_aboutButton_clicked();
+
 private:
     Ui::MainWindow *ui;
 
@@ -30,5 +33,6 @@ private:
     void initStyles();
     void loadJsonData();
     void setupConnections();
+    void updateClock();
 };
 #endif // MAINWINDOW_H

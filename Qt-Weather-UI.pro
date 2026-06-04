@@ -5,7 +5,7 @@ QT += core widgets
 CONFIG += c++17
 
 TEMPLATE = app
-TARGET = Qt-Weather-UI
+TARGET = Weather
 INCLUDEPATH += .
 
 # You can make your code fail to compile if you use deprecated APIs.
@@ -20,4 +20,12 @@ HEADERS += mainwindow.h
 FORMS += mainwindow.ui
 SOURCES += main.cpp mainwindow.cpp
 RESOURCES += Resources.qrc
+
+macx {
+    ICON = icon.png
+}
+win32 {
+    RC_ICONS = icon.png
+}
+
 
