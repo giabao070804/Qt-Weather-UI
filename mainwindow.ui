@@ -10,7 +10,7 @@
     <x>0</x>
     <y>0</y>
     <width>1500</width>
-    <height>630</height>
+    <height>636</height>
    </rect>
   </property>
   <property name="font">
@@ -50,7 +50,7 @@
     <item>
      <widget class="QStackedWidget" name="stackedWidget">
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="page">
        <layout class="QVBoxLayout" name="verticalLayout_3">
@@ -564,7 +564,7 @@ QPushButton:hover { background-color: #005a9e; }</string>
              <enum>Qt::Vertical</enum>
             </property>
             <property name="sizeType">
-             <enum>QSizePolicy::Fixed</enum>
+             <enum>QSizePolicy::MinimumExpanding</enum>
             </property>
             <property name="sizeHint" stdset="0">
              <size>
