@@ -24,8 +24,5 @@ RESOURCES += Resources.qrc
 macx {
     ICON = icon.png
 }
-win32 {
-    RC_ICONS = icon.png
-}
 
 

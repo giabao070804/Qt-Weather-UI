@@ -78,6 +78,13 @@ void MainWindow::initStyles()
         "background-color: #3d3d5c; "
         "color: white; "
         "border: 1px solid #555; "
+        "}"
+        "QAbstractItemView { "
+        "background-color: #1e1e2f; "
+        "color: white; "
+        "border: 1px solid #555; "
+        "selection-background-color: #007ce6; "
+        "selection-color: white; "
         "}";
 
     //set giao diện sáng
@@ -100,6 +107,13 @@ void MainWindow::initStyles()
         "background-color: #ffffff; "
         "color: #1e1e2f; "
         "border: 1px solid #cccccc; "
+        "}"
+        "QAbstractItemView { "
+        "background-color: #ffffff; "
+        "color: #1e1e2f; "
+        "border: 1px solid #cccccc; "
+        "selection-background-color: #e0e0ff; "
+        "selection-color: #1e1e2f; "
         "}";
     }
 
@@ -180,7 +194,7 @@ void MainWindow::setupConnections()
     });
 
     //mở núi tìm sau khi điền thành phố và phường
-    connect(ui->comboBox, &QComboBox::currentIndexChanged, this, [=](int index) {
+    connect(ui->comboBox, QOverload<int>::of(&QComboBox::currentIndexChanged), this, [=](int index) {
         if (index >= 0) {
             ui->btnSearch->setEnabled(true);
         } else {
