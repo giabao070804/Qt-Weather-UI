@@ -76,6 +76,7 @@ void MainWindow::initStyles()
         "border: 1px solid #555; "
         "}"
         "QComboBox { "
+        "font size: 20; "
         "border-radius: 15px; "
         "padding: 5px 15px; "
         "background-color: #3d3d5c; "
@@ -144,15 +145,15 @@ void MainWindow::loadJsonData()
     //set 2 mode định dạng thời gian
     if (ui->twofourButton->isChecked()) {
       full_text = QString(
-                            "<span style='font-size:30px; font-weight:bold;'>%1</span>"
+                            "<span style='font-size:24pt; font-weight:bold;'>%1</span>"
                             "<br>" "<br>"
-                            "<span style='font-size:20px; color:#a0a0a0;'>Hà Nội, Việt Nam (UTC +7)</span>"
+                            "<span style='font-size:14pt; color:#a0a0a0;'>Hà Nội, Việt Nam (UTC +7)</span>"
                             ).arg(time1_text);
     } else {
         full_text = QString(
-                            "<span style='font-size:30px; font-weight:bold;'>%1</span>"
+                            "<span style='font-size:24pt; font-weight:bold;'>%1</span>"
                             "<br>" "<br>"
-                            "<span style='font-size:20px; color:#a0a0a0;'>Hà Nội, Việt Nam (UTC +7)</span>"
+                            "<span style='font-size:14pt; color:#a0a0a0;'>Hà Nội, Việt Nam (UTC +7)</span>"
                             ).arg(time2_text);
     }
 
@@ -220,11 +221,11 @@ void MainWindow::setupConnections()
         QString city = ui->lineEditCity->text();
         QString ward = ui->comboBox->currentText();
         QMap<QString, QString> cityMap = {
-            {"Hà Nội", "🇻🇳 Hà Nội - Việt Nam",},
-            {"London", "🇬🇧 London - Anh"},
-            {"Tokyo", "🇯🇵 Tokyo - Nhật Bản"},
-            {"New York", "🇺🇸 New York - Hoa Kỳ"},
-            {"Sydney", "🇦🇺 Sydney - Úc"}
+            {"Hà Nội", "🍜 Hà Nội - Việt Nam",},
+            {"London", "👑 London - Anh"},
+            {"Tokyo", "🌸 Tokyo - Nhật Bản"},
+            {"New York", "🦅 New York - Hoa Kỳ"},
+            {"Sydney", "🦘 Sydney - Úc"}
         };
 
         if (cityMap.contains(city)) {
@@ -247,7 +248,7 @@ void MainWindow::setupConnections()
             ui->labelWeather->setText(weathers[randomWeather]);
 
             //hiển thị emoji lửa khi nhiệt độ hơn hoặc bằng 25, băng khi dưới 25
-            QString icon = (tempC >= 25) ? "🔥" : "❄️";
+            QString icon = (tempC >= 25) ? "🔥" : "❄";
 
             //quy đổi từ độ C sang độ F
             if (ui->fButton->isChecked()) {
